@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.10">
   <diagram name="Page-1" id="oOs-A8sSS-fOqIIqgsNs">
-    <mxGraphModel dx="660" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1728" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,7 +9,7 @@
             <mxPoint x="410" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xl0R2HCkzKnWkmgw3gWA-1" value="Windows 10 Client&lt;div&gt;Wazuh Agent&lt;/div&gt;" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-1" value="Windows 10 Client&lt;div&gt;Wazuh/SIEM Agent&lt;/div&gt;" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
           <mxGeometry x="360" y="770" width="100" height="70" as="geometry" />
         </mxCell>
         <mxCell id="xl0R2HCkzKnWkmgw3gWA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;strokeColor=#6B6B6B;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-2" target="xl0R2HCkzKnWkmgw3gWA-3">
@@ -27,22 +27,92 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;shape=link;strokeColor=#FF024E;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-3" target="xl0R2HCkzKnWkmgw3gWA-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="xl0R2HCkzKnWkmgw3gWA-3" value="Internet" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
           <mxGeometry x="385" y="460" width="50" height="31.5" as="geometry" />
         </mxCell>
-        <mxCell id="xl0R2HCkzKnWkmgw3gWA-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-4" target="xl0R2HCkzKnWkmgw3gWA-5">
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#1635FF;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-4" target="xl0R2HCkzKnWkmgw3gWA-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="380" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xl0R2HCkzKnWkmgw3gWA-4" value="Wazuh Manager/SIEM" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-20" value="3. Send Alert" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-19">
+          <mxGeometry x="0.0989" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;shape=link;strokeColor=#FF024E;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-4" target="xl0R2HCkzKnWkmgw3gWA-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-38" value="9. Perform Responsive Action" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-36">
+          <mxGeometry x="0.075" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-4" value="SIEM" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
           <mxGeometry x="140" y="460" width="50" height="31.5" as="geometry" />
         </mxCell>
-        <mxCell id="xl0R2HCkzKnWkmgw3gWA-5" value="Shuffle&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=link;strokeColor=#16FF1E;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-5" target="xl0R2HCkzKnWkmgw3gWA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-24" value="4. Enrich IOCS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-23">
+          <mxGeometry x="0.2152" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;shape=link;strokeColor=#1993FF;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-5" target="xl0R2HCkzKnWkmgw3gWA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-26" value="5. Send Alerts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-25">
+          <mxGeometry x="0.0111" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;shape=link;strokeColor=#FFE60C;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-5" target="xl0R2HCkzKnWkmgw3gWA-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-28" value="6. Send Email to&lt;div&gt;SOC Analyst&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-27">
+          <mxGeometry x="0.4265" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF024E;shape=link;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-5" target="xl0R2HCkzKnWkmgw3gWA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-35" value="8. Send Response Action" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-34">
+          <mxGeometry x="0.4139" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-5" value="&lt;div&gt;SOAR&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
           <mxGeometry x="385" y="310" width="50" height="31.5" as="geometry" />
         </mxCell>
         <mxCell id="xl0R2HCkzKnWkmgw3gWA-6" value="&lt;div&gt;TheHive&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
-          <mxGeometry x="690" y="460" width="50" height="31.5" as="geometry" />
+          <mxGeometry x="620" y="460" width="50" height="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;shape=link;strokeColor=#FF024E;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-7" target="xl0R2HCkzKnWkmgw3gWA-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-32" value="8. Send Response&lt;div&gt;Action&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-31">
+          <mxGeometry x="-0.1034" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="xl0R2HCkzKnWkmgw3gWA-7" value="SOC Analyst" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
           <mxGeometry x="600" y="630" width="100" height="70" as="geometry" />
@@ -60,6 +130,47 @@
         </mxCell>
         <mxCell id="xl0R2HCkzKnWkmgw3gWA-2" value="Router" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" vertex="1" parent="1">
           <mxGeometry x="385" y="610" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;strokeColor=#FFEE0A;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-3" target="xl0R2HCkzKnWkmgw3gWA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-30" value="7. Receive Email" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xl0R2HCkzKnWkmgw3gWA-29">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-39" target="xl0R2HCkzKnWkmgw3gWA-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-39" value="Windows 10&lt;div&gt;Send Events&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="5" y="980" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-40" target="xl0R2HCkzKnWkmgw3gWA-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-40" value="Wazuh/SIEM Manager&lt;div&gt;Trigger alerts &amp;amp; Perform Responsive actions&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="110" y="980" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-42" target="xl0R2HCkzKnWkmgw3gWA-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-42" target="xl0R2HCkzKnWkmgw3gWA-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xl0R2HCkzKnWkmgw3gWA-42" target="xl0R2HCkzKnWkmgw3gWA-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-42" value="Shuffle/SOAR&lt;div&gt;Receive SIEM Alerts &amp;amp; Send responsive actions&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="980" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-46" value="OSINT, Threat Intelligence, DNS lookup, etc.&lt;div&gt;Enrich IOCS&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="910" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-48" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;TheHive/SIRP&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Create alert in case management&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1050" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xl0R2HCkzKnWkmgw3gWA-50" value="Email&lt;div&gt;Send Email &amp;amp; perform responsive actions&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="610" y="980" width="210" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
